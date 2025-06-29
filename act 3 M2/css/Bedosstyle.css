@@ -1,5 +1,3 @@
-
-
 .menubar{
 	display: flex;
 	width: 140px;
@@ -139,5 +137,102 @@ nav {
     height: 60px;
 	}
 
+/* Media Queries for Responsive Design */
 
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+    .contenido {
+        margin-left: 0; /* Adjust margin for smaller screens */
+        padding: 10px; /* Add padding for better spacing */
+    }
 
+    .menubar {
+        width: 100%; /* Make menubar full width */
+        position: static; /* Change position to static for normal flow */
+        font-size: 16px; /* Slightly reduce font size */
+        padding-left: 0; /* Remove padding */
+    }
+
+    nav {
+        padding-left: 0; /* Remove padding */
+        height: auto; /* Adjust height to auto */
+    }
+
+    nav ul li {
+        float: none; /* Remove float for block display */
+        text-align: left; /* Align text to left */
+        display: block; /* Ensure li takes full width for centering text */
+        margin-bottom: 5px; /* Add some space between nav items */
+    }
+
+    .producto {
+        width: 45%; /* Adjust product width for two columns */
+        margin: 2.5%; /* Add margin for spacing */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+    .logo {
+        margin-top: 10px; /* Adjust margin */
+    }
+
+    .buscador {
+        width: 100%; /* Make buscador full width */
+        padding: 10px 0; /* Adjust padding */
+        justify-content: center; /* Center items */
+    }
+
+    .buscador input {
+        width: 80%; /* Adjust input width */
+    }
+
+    .contenido {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .seccion {
+        font-size: 20px; /* Reduce font size for section titles */
+    }
+
+    .producto {
+        width: 90%; /* Make product width almost full for single column */
+        margin: 5% auto; /* Center product and add margin */
+        display: block; /* Change display to block */
+        padding-bottom: 15px; /* Add some padding at the bottom */
+    }
+
+    .prod {
+        width: 100%; /* Make prod full width */
+    }
+
+    .prod img {
+        max-width: 100%; /* Ensure images are responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .prod-title {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .social-content, .social, .venta {
+        width: 100%; /* Make social content full width */
+        justify-content: center; /* Center items */
+    }
+
+    .social img {
+        width: 20%; /* Adjust social image width */
+        margin: 0 5px; /* Add margin to social images */
+    }
+
+    /* Make form elements wider on mobile */
+    #product-form .form-control {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #product-form input[type="submit"] {
+        width: 100%;
+    }
+}
