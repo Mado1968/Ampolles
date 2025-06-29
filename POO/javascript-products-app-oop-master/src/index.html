@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product App</title>
+    <!-- Bootswatch Cosmo Theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="App.css">
+    <link rel="stylesheet" href="Bedosstyle.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand " href="#">Bodega Online</a>
+    </nav>
+
+
+    <div class="container">
+        <!-- APPLICATION -->
+        <div id="App" class="row pt-5">
+      
+
+            <!-- FORM -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Add Add A Product</h4>
+                    </div>
+                    <form id="product-form" class="card-body">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Product Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="price" step="0.01" placeholder="Product Price"
+                                class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="year" min="1900" max="2099" step="1" value="2018"
+                                class="form-control">
+                        </div>
+                        <input type="submit" value="Save" class="btn btn-primary btn-block">
+                    </form>
+                </div>
+            </div>
+
+            <!-- PRODUCTS LIST -->
+           <div id="product-list" class="col">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col">
+
+                        <div class="producto">
+                            <a href="">
+                             <div class="prod"> <img src="img/1.jpg"></div>
+                              <div class="text">En stock</div>
+                            </a>
+                
+                               <div class="prod-title"> Cava Torelló</div>
+                                 <div class="prod-description"> Cava Fresco</div>
+                
+                                  <div class="Precio">22 € iva incl.
+                
+                                    <div class="social-content">
+                                     <div class="social"> <a href=""> <img src="img/twitter.png">  <img src="img/facebook.png"></a></div>
+                                    
+                                            <div class="venta">
+                                            <img src="img/carrito.png">
+                                            <input type="text" size="1" id="unidades"value="1">
+                                            </div>
+                                  </div>
+                             </div>    
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="producto">
+                            <a href="">
+                             <div class="prod"> <img src="img/1.jpg"></div>
+                              <div class="text">En stock</div>
+                            </a>
+                
+                               <div class="prod-title"> Cava Torelló</div>
+                                 <div class="prod-description"> Cava Fresco</div>
+                
+                                  <div class="Precio">22 € iva incl.
+                
+                                    <div class="social-content">
+                                     <div class="social"> <a href=""> <img src="img/twitter.png">  <img src="img/facebook.png"></a></div>
+                                    
+                                            <div class="venta">
+                                            <img src="img/carrito.png">
+                                            <input type="text" size="1" id="unidades"value="1">
+                                            </div>
+                                  </div>
+                             </div>    
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="producto">
+                            <a href="">
+                             <div class="prod"> <img src="img/1.jpg"></div>
+                              <div class="text">En stock</div>
+                            </a>
+                
+                               <div class="prod-title"> Cava Torelló</div>
+                                 <div class="prod-description"> Cava Fresco</div>
+                
+                                  <div class="Precio">22 € iva incl.
+                
+                                    <div class="social-content">
+                                     <div class="social"> <a href=""> <img src="img/twitter.png">  <img src="img/facebook.png"></a></div>
+                                    
+                                            <div class="venta">
+                                            <img src="img/carrito.png">
+                                            <input type="text" size="1" id="unidades"value="1">
+                                            </div>
+                                  </div>
+                             </div>    
+                        </div>
+                    </div>
+                    <div class="col"> <div class="producto">
+                        <a href="">
+                         <div class="prod"> <img src="img/1.jpg"></div>
+                          <div class="text">En stock</div>
+                        </a>
+            
+                           <div class="prod-title"> Cava Torelló</div>
+                             <div class="prod-description"> Cava Fresco</div>
+            
+                              <div class="Precio">22 € iva incl.
+            
+                                <div class="social-content">
+                                 <div class="social"> <a href=""> <img src="img/twitter.png">  <img src="img/facebook.png"></a></div>
+                                
+                                        <div class="venta">
+                                        <img src="img/carrito.png">
+                                        <input type="text" size="1" id="unidades"value="1">
+                                        </div>
+                              </div>
+                         </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+    <script src="App.js" type="module"></script>
+</body>
+
+</html>

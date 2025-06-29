@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+
+<head>
+	<meta charset="utf-8" />
+	<!--<link rel="stylesheet" type="text/css" href="css/Bedosstyle.css">-->
+   <script src="https://kit.fontawesome.com/f5353d2005.js" crossorigin="anonymous"></script>
+   <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet"> 
+    
+	<title>Actividad 3 Modulo 2 - CSS -</title>
+
+<style> 
+
+    body {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cbccc8)) fixed;
+    }
+    body,html{
+    margin: 0;
+    padding: 0;
+    }
+    html {
+    min-height: 100%;
+    }
+    body {
+    background: linear-gradient(#ffffff, #333300);
+    }
+    header{
+      display: flex;
+      height: 60px;
+      line-height: 60px;
+      padding: 0px;
+      align-items:center;
+      background: #999966;
+      top: 0;
+      left: 0;
+
+    }
+    nav {  
+    overflow:hidden;
+    width:80%;
+    height: 60px;
+    padding-left: 5px;
+
+    }
+
+    nav {  
+    -moz-border-radius:10px;
+    border-radius:10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#0000));
+    background-image: -moz-linear-gradient(top center, #FFF, #fff);
+    background-image: -o-linear-gradient(top, #FFF, #fff);
+    background-image: linear-gradient(top, #FFF, #fff);
+    overflow:hidden;
+    padding-left: 60px;
+    width:100%;
+    height: 60px;
+  }
+
+    nav ul li{
+    -webkit-border-radius:5px;/*Chrome y Safari*/
+    -moz-border-radius:5px;/*Firefox*/
+    -o-border-radius:5px;/*Opera*/
+    border-radius:5px;/*Estandar por defecto*/
+    float:left;
+    font-family: 'Gotu', sans-serif;
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+    text-shadow: 0px 1px 0px #FFF;
+    }
+
+    ul{
+    list-style:none;
+    margin:0 5px 0 5px;
+    padding:0px;
+    }
+
+    nav ul li:hover{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#999966));/*Chrome y Safari*/
+    background-image: -moz-linear-gradient(top center, #FFF, #999966);/*Firefox*/
+    background-image: -o-linear-gradient(top, #FFF, #999966);/*Opera*/
+    background-image: linear-gradient(top, #FFF, #999966);/*Estandar por defecto*/
+    -webkit-box-shadow:  1px -1px 0px #999;/*Chrome y Safari*/
+    -moz-box-shadow:  1px -1px 0px #999;/*Firefox*/
+    -o-box-shadow:  1px -1px 0px #999;/*Opera*/
+    box-shadow:  1px -1px 0px #999;/*Estandar por defecto*/
+    border:1px solid #E3E3E3;
+    }
+
+    nav ul li a{
+    color:#000000;
+    
+    padding:10px;
+    text-decoration:none;
+    -webkit-transition: 0.4s linear all;
+    -moz-transition: 0.4s linear all;
+    -o-transition: 0.4s linear all;
+    transition: 0.4s linear all;
+    }
+
+    nav ul li a:hover {
+    color:#ffffff;
+    }
+
+.menubar{
+  display: flex;
+  width: 800px;
+  position: fixed;
+  top:0px;
+  font-size: 18px;
+  padding-left: 315px;
+  }
+.maincontent{
+   width: 100%;
+   margin-top: 60px;
+  border: 0px solid black;
+  }
+.logo{
+    width: 50px;
+    align-items:center;
+    margin-top: 15px;
+}
+.logo img{
+    width: 98%;
+}
+.buscador{
+    display: flex;
+    width: 15%;
+    padding: 0px 16px;
+}
+.buscador input{
+    padding: 1px;
+    border: 1px solid #cbccc8;
+    font-family: 'Gotu', sans-serif;
+}
+.buscador botonmaster{
+    width: 50px;
+}
+.maincontent{
+    margin-top: 10px;
+    width: 100%;
+}
+.contenido{
+    margin:auto;
+    margin-bottom: 10px;
+    margin-left: 290px;
+    padding-top: 50px;
+    width: calc(100%-20px);
+    max-width: 1100px;
+    font-family: 'Gotu', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+.seccion{
+    padding: 5px 0px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ff9900;
+    margin-bottom: 10px;
+    font-family: 'Gotu', sans-serif;
+}
+.lista{
+    display: table;
+    width: 100%;
+}
+.producto{
+    display: inline-table;
+    padding: 1px;
+    width: 30%;
+}
+.prod{
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 3px #336600;
+    background: #b8b894;
+    margin-bottom: 10px;
+}
+.prod img{
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;  
+}
+.prod:hover{
+  webkit-box-shadow: inset 0 0 0 200px rgba(81, 85, 27, 0.87);
+  box-shadow: inset 0 0 0 200px rgba(81, 85, 27, 0.87);
+}
+.text{
+  opacity: 0;
+ background: #9a9623;
+ color: white;
+  text-align: center;
+  padding-left: 1px;
+  padding-top: 0px;
+  font-family:  'Gotu', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.text1{
+   opacity: 0;
+ background: #b72e2a;
+ color: white;
+  text-align: center;
+  padding-left: 1px;
+  padding-top: 0px;
+  font-family:  'Gotu', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.text2{
+   opacity: 0;
+ background: #2aa6b7;
+ color: white;
+  text-align: center;
+  padding-left: 1px;
+  padding-top: 0px;
+  font-family:  'Gotu', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.prod:hover .text{
+  opacity: 1;
+    transition: .2s ease;
+}
+.prod:hover .text1{
+  opacity: 1;
+    transition: .2s ease;
+}
+.prod:hover .text2{
+  opacity: 1;
+    transition: .2s ease;
+}
+.prod-title{
+    padding-top: 3px;
+    font-size: 18px;
+    color: #b36b00;
+    font-family: 'Gotu', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+.prod-description{
+    font-family: 'Gotu', sans-serif;
+    text-align: center;
+    font-size: 10px;
+}
+.Precio{
+    font-family: 'Gotu', sans-serif;
+    text-align: center;
+    font-size: 10px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+.social-content{
+    display: flex;
+    width: 90%;
+}
+.social{
+    display: flex;
+    padding-left: 0px; 
+}
+.social img{
+width: 28%;
+}
+.venta{
+    display: flex;
+    padding-left: 0px;
+    padding-right: 5px;
+    width: 60%; 
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+   <header>
+    <div class="logo"> <img src="img/logo.jpg"></div>
+    <div class="buscador">
+        <input type="text" id="buscar" placeholder=" busca lo que necesites...">
+        <button class="botonmaster"><i class="fas fa-search"></i></button>
+    </div>
+
+        <div class="menubar">
+         <nav>
+          <ul>
+    <li><a title="Inicio" href="index.html">Inicio</a></li>
+    <li><a title="Productos" href="productos.html">Productos</a></li>
+    <li><a title="CasosdeExito" href="casos.html">Casos de exito</a></li>
+    <li><a title="Carrito" href="carrito.html">Carrito</a></li>
+    <li><a title="Empresa" href="empresa.html">Empresa</a></li>
+    <li><a title="contacto" href="contacto.html">Contacto</a></li>
+         </ul>
+        </nav>
+        </div>
+   </header>
+
+
+  <div class="maincontent"></div>
+    <div class="contenido">
+        <p>
+            Alumno - Francesc Bedós <br>
+            Curso - Aplicaciones Multiplataforma Web - <br>
+            Actividad 3 Módulo 2 - <br>
+
+        </p>
+     
+              </div>
+            </div>
+        </div>
+    </div>	
+</body>
