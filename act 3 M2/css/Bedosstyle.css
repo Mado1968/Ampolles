@@ -1,9 +1,12 @@
 .menubar{
 	display: flex;
-	width: 140px;
+	/* width: 140px; */ /* Remove fixed width */
+    width: 100%; /* Make it full width to center content */
 	position: fixed;
 	top:5px;
 	font-size: 18px;
+    justify-content: center; /* Center the nav element within */
+    /* padding-left: 315px; */ /* Remove fixed padding */
   }
 
 .maincontent{
@@ -132,10 +135,29 @@ nav {
     background-image: -o-linear-gradient(top, #FFF, #fff);
     background-image: linear-gradient(top, #FFF, #fff);
     overflow:hidden;
-    padding-left: 400px;
+    /* padding-left: 400px; */ /* Removed to allow centering */
     width:100%;
     height: 60px;
+    display: flex; /* Added for centering */
+    justify-content: center; /* Added for centering */
+    align-items: center; /* Vertically align items in nav */
 	}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Ensure ul itself tries to center its inline-block children */
+}
+
+nav ul li {
+    display: inline-block; /* Arrange menu items horizontally */
+    margin: 0 10px; /* Add some spacing between items */
+    font-family: 'Gotu', sans-serif; /* Copied from inline html style */
+    font-size:18px; /* Copied from inline html style */
+    font-weight:bold; /* Copied from inline html style */
+    text-shadow: 0px 1px 0px #FFF; /* Copied from inline html style */
+}
 
 /* Media Queries for Responsive Design */
 
@@ -151,18 +173,25 @@ nav {
         position: static; /* Change position to static for normal flow */
         font-size: 16px; /* Slightly reduce font size */
         padding-left: 0; /* Remove padding */
+        display: flex; /* Ensure menubar itself can center its content if needed */
+        justify-content: center; /* Center the nav within the menubar */
     }
 
     nav {
         padding-left: 0; /* Remove padding */
         height: auto; /* Adjust height to auto */
+        width: auto; /* Allow nav to size according to its content */
     }
 
     nav ul li {
-        float: none; /* Remove float for block display */
-        text-align: left; /* Align text to left */
-        display: block; /* Ensure li takes full width for centering text */
-        margin-bottom: 5px; /* Add some space between nav items */
+        /* float: none; */ /* Removed float */
+        text-align: center; /* Center text within li */
+        display: inline-block; /* Allow li elements to sit side-by-side */
+        margin-bottom: 0; /* Reset margin for horizontal layout */
+        margin-right: 10px; /* Add some space between nav items */
+    }
+    nav ul li:last-child {
+        margin-right: 0; /* Remove margin from the last item */
     }
 
     .producto {
@@ -234,5 +263,12 @@ nav {
 
     #product-form input[type="submit"] {
         width: 100%;
+    }
+
+    /* Ensure nav items stack vertically on mobile */
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0; /* Add some vertical spacing */
     }
 }

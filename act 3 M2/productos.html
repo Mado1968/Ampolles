@@ -54,8 +54,8 @@
     background-image: -o-linear-gradient(top, #FFF, #fff);
     background-image: linear-gradient(top, #FFF, #fff);
     overflow:hidden;
-    padding-left: 60px;
-    width:100%;
+    /* padding-left: 60px; */ /* Removed inline style */
+    width:100%; /* This might need to be auto or removed if nav is flex item */
     height: 60px;
   }
 
@@ -64,7 +64,7 @@
     -moz-border-radius:5px;/*Firefox*/
     -o-border-radius:5px;/*Opera*/
     border-radius:5px;/*Estandar por defecto*/
-    float:left;
+    /* float:left; */ /* Removed inline style */
     font-family: 'Gotu', sans-serif;
     font-size:18px;
     font-weight:bold;
@@ -107,11 +107,11 @@
 
 .menubar{
   display: flex;
-  width: 800px;
+  /* width: 800px; */ /* Removed inline style */
   position: fixed;
   top:0px;
   font-size: 18px;
-  padding-left: 315px;
+  /* padding-left: 315px; */ /* Removed inline style */
   }
 .maincontent{
    width: 100%;
